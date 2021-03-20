@@ -23,7 +23,6 @@ public class TestPostController {
 
     @PostMapping("/test")
     public String buy(@Valid Order order) {
-
         log.info("order---->:{}", order);
         return "success";
     }

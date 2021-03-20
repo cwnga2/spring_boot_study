@@ -24,11 +24,10 @@ public class TestValidatedGroupController {
     }
 
     @PostMapping("/saveDetailUser")
-    public Object detailUser(@Validated(User.DetailUser.class) User user, BindingResult result) {
+    public Object detailUser(@Validated(User.DetailUser.class) User user) {
 
 
-        log.info("order---->:{}", result.getAllErrors());
-        return result.getAllErrors();
+    return null;
     }
 
 }
